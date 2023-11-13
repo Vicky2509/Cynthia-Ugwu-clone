@@ -10,11 +10,28 @@ body {
   height: 100%;
   width: 100%;
 }
+#minicircle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  z-index: 999999;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.bounding{
+  width: fit-content;
+  background-color: red;
+  
+}
 #main {
   width: 100%;
   height: auto;
+  background-color: black;
 }
 #hero {
+  position: relative;
   color: white;
   width: 100%;
   height: 100vh;
@@ -64,9 +81,11 @@ body {
 #smallheadings h5 {
   text-align: right;
   margin-right: 50px;
-  font-size: 1vw;
+  font-size: 1.2vw;
+  height: 30px;
 }
 #herofooter {
+  color: white;
   padding: 0 2vw;
   position: absolute;
   width: 100%;
@@ -201,7 +220,7 @@ body {
   gap: 55px;
   font-size: 14px;
 }
-#footerright a{
+#footerright a {
   color: white;
   text-decoration: none;
 }
